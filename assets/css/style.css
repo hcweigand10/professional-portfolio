@@ -148,7 +148,6 @@ article section {
 
 }
 
-
 /* card styling and declare height */
 .card {
     width: 100%;
@@ -243,7 +242,14 @@ article section {
         font-size: 5vw;
     }
     #contact li {
-        font-size: 4vw;
+        font-size: 16px;
     }
-    
 }
+
+@media screen and (max-width: 500px) {
+    .tag h2 {
+        font-size: 18px;
+    }
+    .tag p {
+        font-size: 14px;
+    }
