@@ -22,7 +22,7 @@
 /* title styling */
 header h2 {
     display: inline-block;
-    font-size: 3em;
+    font-size: 40px;
     padding: 5px;
     margin: 5px;
 }
@@ -45,6 +45,7 @@ header nav ul {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
+    justify-content: right;
 }
 
 /* navbar styling */
@@ -86,10 +87,10 @@ header nav ul li {
 
 /* subtitle positioning */
 #subtitle {
-    font-size: 2em;
+    font-size: 36px;
     position: relative;
-    right: 10px;
-    top: 200px;
+    right: 0;
+    top: 70%;
     padding: 5px;
     float: right;
 }
@@ -109,7 +110,7 @@ article {
 
 /* labels styling and layout */
 .label {
-    font-size: 2em;
+    font-size: 28px;
     font-family: sans-serif;
     width: 10%;
     min-width: 10vw;
@@ -147,13 +148,6 @@ article section {
 
 }
 
-/* when screen is large enough, have main project take up both columns */
-@media screen and (min-width: 992px) {
-    #main-project {
-        grid-column: 1/3;
-        height: 50vh;
-    }
-}
 
 /* card styling and declare height */
 .card {
@@ -211,5 +205,45 @@ article section {
     color: var(--light);
 }
 
+/* font scaling with screen size */
+@media screen and (max-width: 1400px) {
+    .label {
+        font-size: 2vw;
+    }
+}
 
+/* adjusting spacing and font size with screen size */
+@media screen and (max-width: 1000px) {
+    .content {
+        padding-left: 7vw;
+    }
+    .label {
+        font-size: 18px;
+        width: 100px;
+    }
+    article {
+        margin-left: 1vw;
+    }
+}
 
+/* when screen is large enough, have main project take up both columns */
+@media screen and (min-width: 992px) {
+    #main-project {
+        grid-column: 1/3;
+        height: 50vh;
+    }
+}
+
+/* more font size adjustments for mobile devices */
+@media screen and (max-width: 762px) {
+    #subtitle {
+        font-size: 4vw;
+    }
+    header h2 {
+        font-size: 5vw;
+    }
+    #contact li {
+        font-size: 4vw;
+    }
+    
+}
