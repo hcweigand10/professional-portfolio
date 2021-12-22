@@ -11,6 +11,26 @@
     --light: rgb(164, 226, 235);
 }
 
+.link {
+    text-decoration: none;
+    color: var(--light);
+}
+
+.link:visited {
+    text-decoration: none;
+    color: var(--light);
+}
+
+.link:hover {
+    border-bottom: 10px solid var(--dark);
+    color: white;
+} 
+
+a:hover {
+    cursor: pointer;
+    color: hotpink;
+}
+
 
 .titles {
     color: var(--dark);
@@ -155,21 +175,7 @@ article section {
 }
 
 
-.link {
-    text-decoration: none;
-    color: var(--light);
 
-}
-
-.link:visited {
-    text-decoration: none;
-    color: var(--light);
-}
-
-.link:hover {
-    border-bottom: 10px solid var(--dark);
-    color: white;
-}
 
 
 
