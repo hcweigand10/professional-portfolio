@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* universal selector to reset margins, padding, and font */
 * {
     box-sizing: border-box;
