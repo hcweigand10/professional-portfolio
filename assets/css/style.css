@@ -1,36 +1,34 @@
 /* color variables */
 :root {
     --dark: rgb(0, 62, 65);
-    --light: rgb(164, 226, 235);
-    --lightColor: rgb(207, 236, 245);
-
+    --light: rgb(207, 236, 245);
 }
 
 .navbar {
-    background-color: var(--lightColor);
+    background-color: var(--light);
     margin-bottom: 40px;
 }
 
-/* why no work */
-.card {
-    border: 3px solid white;
-    background-color: violet;
-    margin-bottom: 200px;
-}
+
 
 /* card styling and declare height */
 .mycard {
     width: 100%;
-    height: 220px;
+    height: 320px;
+}
+
+#feature {
+    height: 400px;
 }
 
 .mycard img {
-    border: 3px solid var(--dark);
+    border: 3px solid var(--light);
 }
 
 /* hover effect */
 .mycard:hover {
-    opacity: .5;
+    opacity: .7;
+    cursor: pointer;
 }
 
 /* fit image to full card */
@@ -45,12 +43,9 @@
     color: var(--dark);
     float: left;
     bottom: 50%;
+    left: 3px;
     padding: 3px;
-}
-
-/* overrides default text pointer when on the example tags */
-#examples-grid h3:hover {
-    cursor: pointer;
+    text-decoration: none;
 }
 
 /* contact me list formatting */
@@ -86,6 +81,6 @@
 }
 
 footer {
-    background-color: var(--lightColor);
+    background-color: var(--light);
 }
 
