@@ -9,6 +9,15 @@
     margin-bottom: 40px;
 }
 
+.nav-link {
+    color: black;
+
+}
+
+.navbar a:hover {
+    border-bottom: 1px solid black;
+}
+
 
 /* hover effect */
 .mycard:hover {
